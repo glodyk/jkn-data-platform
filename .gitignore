@@ -1,4 +1,22 @@
-.Rproj.user
+# ===== Credentials =====
+.Renviron
+.httr-oauth
+
+# ===== R session =====
 .Rhistory
 .RData
 .Ruserdata
+
+# ===== Data kesehatan (JANGAN MASUK GITHUB) =====
+*.csv
+*.CSV
+*.rds
+*.Rds
+*.xlsx
+*.xls
+
+# folder data lokal
+data/
+
+# RStudio cache
+.Rproj.user/
