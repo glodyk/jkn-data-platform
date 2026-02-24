@@ -1,22 +1,37 @@
-# ===== Credentials =====
-.Renviron
-.httr-oauth
+# ===== R / RStudio =====
 
-# ===== R session =====
 .Rhistory
 .RData
 .Ruserdata
-
-# ===== Data kesehatan (JANGAN MASUK GITHUB) =====
-*.csv
-*.CSV
-*.rds
-*.Rds
-*.xlsx
-*.xls
-
-# folder data lokal
-data/
-
-# RStudio cache
 .Rproj.user/
+.RDataTmp
+
+# ===== renv =====
+
+renv/library/
+renv/staging/
+renv/cache/
+
+# ===== credentials & auth =====
+
+config/bigquery_auth.R
+*.json
+*.key
+*.pem
+.httr-oauth
+.gcloud/
+
+# ===== local runtime output =====
+
+logs/
+output/
+tmp/
+
+# ===== warehouse symlink =====
+
+sql_warehouse/
+
+# ===== OS junk =====
+
+.DS_Store
+Thumbs.db
