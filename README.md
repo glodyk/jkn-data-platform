@@ -61,3 +61,15 @@ Authentication credentials are excluded using `.gitignore`.
 * `bpjs-chronic-analytics` – data warehouse SQL transformations
 * `jkn-obstetric-fraud-detection` – obstetric claims research
 * `jkn-strategic-purchasing-ews` – early warning system modelling
+
+---
+
+## Research Ecosystem
+
+This repository is part of a larger JKN research framework:
+
+* **jkn-claims-warehouse**: transforms raw claims into analytic datasets
+* **jkn-obstetric-fraud-detection**: applies the framework to detect abnormal delivery patterns
+* **jkn-strategic-purchasing-ews**: early warning indicators for purchasing and policy monitoring
+
+The repositories are intentionally separated to distinguish infrastructure, methodology, and research applications.
