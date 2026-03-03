@@ -1,3 +1,34 @@
+![Platform Type](https://img.shields.io/badge/type-data--platform-blue)
+![Environment](https://img.shields.io/badge/env-production-green)
+---
+
+## Data Warehouse Architecture
+
+The BigQuery warehouse follows a layered architecture:
+
+raw → staging → mart → mart_prod → audit
+
+### Layer Description
+
+- **raw**: direct ingestion from BPJS claim sources
+- **staging**: cleaned and normalized intermediate tables
+- **mart**: analytic-ready datasets
+- **mart_prod**: validated production datasets
+- **audit**: governance and DDL activity logs
+
+---
+
+## Governance
+
+This project follows strict warehouse governance principles:
+
+- All DDL (CREATE / REPLACE) statements are stored in Git
+- All mart creation activity is logged in `audit.mart_ddl_log`
+- Production tables are separated from development marts
+- No direct edits are performed in production datasets
+
+The objective is to maintain reproducibility, traceability, and audit integrity.
+
 # BPJS Kediri Data Connector
 
 This repository is the operational data connector for the JKN analytics research environment.
