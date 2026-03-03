@@ -35,3 +35,15 @@ sql_warehouse/
 
 .DS_Store
 Thumbs.db
+
+# ===== generic runtime files =====
+
+*.log
+*.tmp
+.env
+
+# ===== BigQuery & GCP =====
+
+*.service_account.json
+*.credentials.json
+.gcloud/
